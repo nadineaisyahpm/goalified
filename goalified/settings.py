@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-t35d42&0iv4q5kxez*bcgcz-msi3#00rzidi$%-42i$adnj$+='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = False;
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", "nadine-aisyah-goalified.pbp.cs.ui.ac.id"]
 
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'goalified.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
