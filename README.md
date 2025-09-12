@@ -37,6 +37,8 @@ Jawaban: Melanjutkan dari Tugas 2 PBP saya, berikut adalah langkah-langkah imple
             - product_detail.html, untuk menampilkan detail lengkap satu produk serta tombol kembali ke daftar produk
             - add_product.html, untuk menampilkan form input produk baru lengkap dengan tombol submit dan tombol kembali
 
+            (Selain itu, saya juga membuat perubahan pada main.html yang sebelumnya dibuat pada Tugas 2 PBP dengan menambahkan tombol “See Products” yang menggunakan {% url 'main:product_list' %}, sehingga ketika diklik, langsung diarahkan ke halaman daftar produk tanpa harus mengetik URL secara manual.)
+
             Setelah semua template siap, saya menjalankan server menggunakan python manage.py runserver dan membuka halaman web di browser. Saya memeriksa semua halaman: daftar produk, detail produk, dan form tambah produk, untuk memastikan semuanya bekerja dengan benar.
 
             5. Memeriksa hasil request JSON dan XML menggunakan Postman

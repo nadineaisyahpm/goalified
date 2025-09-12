@@ -16,6 +16,19 @@
         p {
           font-size: 18px; 
         }
+        /* Style tombol */
+        .btn {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #FF69B4;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+          margin-top: 20px;
+        }
+        .btn:hover {
+          background-color: #FF1493;
+        }
       </style>
   </head>
   <body>
@@ -23,5 +36,8 @@
     <h5>Your one-stop shop for your sports gear, training essentials, and performance needs.</h5>
     <p>Made by: {{ name }}</p>
     <p>Class: {{ class_name }}</p>
+
+    <!-- Tombol See Products -->
+    <a href="{% url 'main:product_list' %}" class="btn">See Products</a>
   </body>
 </html>
