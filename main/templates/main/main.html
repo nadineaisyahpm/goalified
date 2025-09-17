@@ -1,43 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Goalified</title>
-    <style>
-        body {
-          font-family: Arial, Helvetica, sans-serif; 
-        }
-        h1 {
-          font-family: "Courier New", monospace; 
-        }
-        h5 {
-            font-family: "Courier New", monospace; 
-            font-style: italic;            
-        }
-        p {
-          font-size: 18px; 
-        }
-        /* button style adjusment */
-        .btn {
-          display: inline-block;
-          padding: 10px 20px;
-          background-color: #FF69B4;
-          color: white;
-          text-decoration: none;
-          border-radius: 5px;
-          margin-top: 20px;
-        }
-        .btn:hover {
-          background-color: #FF1493;
-        }
-      </style>
-  </head>
-  <body>
+{% extends "base.html" %}
+
+{% block title %}Home - Goalified{% endblock %}
+
+{% block content %}
     <h1>Welcome to {{ app_name }}!</h1>
     <h5>Your one-stop shop for your sports gear, training essentials, and performance needs.</h5>
     <p>Made by: {{ name }}</p>
     <p>Class: {{ class_name }}</p>
 
-    <!-- see product detail button -->
     <a href="{% url 'main:product_list' %}" class="btn">See Products</a>
-  </body>
-</html>
+{% endblock %}

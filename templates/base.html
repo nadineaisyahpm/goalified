@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Goalified{% endblock %}</title>
-    <style> 
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; 
+        }
         h1 {
             font-family: "Courier New", monospace; 
         }
+        h5 {
+            font-family: "Courier New", monospace; 
+            font-style: italic;            
+        }
+        p {
+            font-size: 18px; 
+        }
+        /* tombol umum */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FF69B4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #FF1493;
+        }
     </style>
+    
 </head>
 <body>
     <header>
